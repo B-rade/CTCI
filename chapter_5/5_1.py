@@ -14,7 +14,7 @@ def insert_binary_integers(N: int, M: int, i: int, j: int) -> int:
     return result
 
 
-class TestOneAway(unittest.TestCase):
+class TestInsertBinaryIntegers(unittest.TestCase):
     def test_equal1(self):
         N = 0b1000000000
         M = 0b10011

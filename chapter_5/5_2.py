@@ -18,8 +18,7 @@ def binary_to_string(x: float) -> str:
     return ''.join(result)
 
 
-
-class TestOneAway(unittest.TestCase):
+class TestBinaryToString(unittest.TestCase):
     def test_equal1(self):
         N = 0.75
         answer = '11'

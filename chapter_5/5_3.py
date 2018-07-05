@@ -25,7 +25,7 @@ def pairwise(iterable):
     return zip(a, b)
 
 
-class TestOneAway(unittest.TestCase):
+class TestFlipBitToWin(unittest.TestCase):
     def test_equal1(self):
         N = 0b11011101111
         answer = 8
@@ -39,22 +39,16 @@ class TestOneAway(unittest.TestCase):
         self.assertEqual(flip_bit_to_win(N), answer)
 
     def test_equal3(self):
-        # This number is 11 bits long, but it's preceded by zeros. We can flip a zero at the beginning to make the
-        # sequence 12 bits long
         N = 0b0
         answer = 1
         self.assertEqual(flip_bit_to_win(N), answer)
 
     def test_equal4(self):
-        # This number is 11 bits long, but it's preceded by zeros. We can flip a zero at the beginning to make the
-        # sequence 12 bits long
         N = 0b1001
         answer = 2
         self.assertEqual(flip_bit_to_win(N), answer)
 
     def test_equal5(self):
-        # This number is 11 bits long, but it's preceded by zeros. We can flip a zero at the beginning to make the
-        # sequence 12 bits long
         N = 0b100111011
         answer = 6
         self.assertEqual(flip_bit_to_win(N), answer)
